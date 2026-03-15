@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --card: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #1d4ed8;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(900px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 0;
+    }
+
+    .brand {
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .nav-links a {
+      margin-left: 1rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin: 2rem 0;
+      padding: 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    .projects {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.9rem;
+      background: #fcfcfc;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.55rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    QUICK EDIT GUIDE (BEGINNER FRIENDLY)
+    1) Replace "Your Name" and the sample text with your details.
+    2) To REMOVE a whole section, delete from:
+       <section id="...">  to  </section>
+    3) Update links (#) with your real URLs.
+  -->
+
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#home">Your Name</a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- SECTION: HOME -->
+    <section id="home">
+      <h1>Hi, I'm Your Name</h1>
+      <p>I am a beginner web developer learning HTML, CSS, and JavaScript.</p>
+      <a class="btn" href="#projects">See My Projects</a>
+    </section>
+
+    <!-- SECTION: ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Write a short intro here: where you're based, what you're learning,
+        and what kind of role you're aiming for.
+      </p>
+    </section>
+
+    <!-- SECTION: PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>A short description of your project.</p>
+          <a href="#">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>A short description of your project.</p>
+          <a href="#">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      <p>GitHub: <a href="#">your-github-link</a></p>
+      <p>LinkedIn: <a href="#">your-linkedin-link</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. Built with simple HTML and CSS.</p>
+  </footer>
+</body>
+</html>
